@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Java - CodeLearn</title>
+  <link rel="stylesheet" href="language.css">
+</head>
+<body>
+  <nav>
+    <ul class="navbar">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="c.html">C</a></li>
+      <li><a href="python.html">Python</a></li>
+      <li><a href="java.html">Java</a></li>
+      <li><a href="html.html">HTML</a></li>
+      <li><a href="javascript.html">JavaScript</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  
+  <main class="page-content">
+    <h1>Java Programming</h1>
+    <p>Java is a high-level, class-based programming language that is designed to have as few implementation dependencies as possible. It is used in web development, software development, and mobile applications.</p>
+    
+    <section class="java-basics">
+      <h2>Basics of Java</h2>
+      <ul>
+        <li>Java is an object-oriented language, which means everything in Java is treated as an object.</li>
+        <li>Java programs must be compiled into bytecode and run on the Java Virtual Machine (JVM).</li>
+        <li>The basic structure of a Java program includes a <code>public class</code> and the <code>main</code> method.</li>
+      </ul>
+    </section>
+
+    <section class="java-data-types">
+      <h2>Data Types in Java</h2>
+      <p>Java offers several built-in data types for different data manipulations:</p>
+      <ul>
+        <li><strong>int</strong> - For integers (e.g., <code>int x = 10;</code>).</li>
+        <li><strong>float</strong> - For floating-point numbers (e.g., <code>float y = 3.14f;</code>).</li>
+        <li><strong>char</strong> - For characters (e.g., <code>char letter = 'A';</code>).</li>
+        <li><strong>boolean</strong> - For true or false values (e.g., <code>boolean flag = true;</code>).</li>
+      </ul>
+    </section>
+
+    <section class="code-snippets">
+      <h2>Code Snippets</h2>
+      <h3>Hello, World Program</h3>
+      <pre><code>public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}</code></pre>
+
+      <h3>Basic Input/Output</h3>
+      <pre><code>import java.util.Scanner;
+
+public class UserInput {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter your age: ");
+        int age = scanner.nextInt();
+        System.out.println("You are " + age + " years old.");
+    }
+}</code></pre>
+
+      <h3>Conditional Statements</h3>
+      <pre><code>public class EvenOdd {
+    public static void main(String[] args) {
+        int number = 10;
+        if (number % 2 == 0) {
+            System.out.println(number + " is even.");
+        } else {
+            System.out.println(number + " is odd.");
+        }
+    }
+}</code></pre>
+    </section>
+    
+    <div class="goto">
+      <img src="/images/contract.png" alt="test">
+      <a href="quiz.html">Enough Learning, Try Your Knowledge</a>
+    </div>
+  </main>
+</body>
+</html>

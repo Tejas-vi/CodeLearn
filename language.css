@@ -1,0 +1,214 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+  background-color: #ffffff53;
+  color: #333;
+  line-height: 1.6;
+  transition: background-color 0.3s ease;
+  width: 100%; /* Ensure full width */
+}
+
+/* Navbar Styling */
+
+ .navbar {
+  list-style: none;
+  margin: 0;
+  padding: 10px;
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar li {
+  margin: 0;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 20px;
+  font-family: Arial, sans-serif;
+  display: block;
+  border-radius: 20px;
+  transition: background 0.3s;
+}
+
+.navbar a:hover {
+  background-color: #555;
+}
+
+/* Page Content */
+.page-content {
+  max-width: 100%; /* Full width */
+
+  padding: 30px;
+  background-color: #58838153;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+h1, h2, h3 {
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: bold; /* Bold the headings */
+}
+
+h1 {
+  font-size: 32px;
+  text-align: center;
+  color: #2c3e50;
+  animation: fadeIn 1s ease-in-out;
+}
+
+h2 {
+  font-size: 28px;
+  color: #2980b9;
+  border-bottom: 2px solid #2980b9;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+h3 {
+  font-size: 24px;
+  margin-top: 20px;
+  color: #8e44ad;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Paragraphs and Lists */
+p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+ul {
+  list-style-type: square;
+  margin-left: 20px;
+}
+
+li {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+code {
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 16px;
+  color: #c0392b;
+}
+
+/* Code Snippets */
+pre {
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  padding: 2px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  overflow-x: auto;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+pre code {
+  display: block;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* Section Styling */
+section {
+  margin-bottom: 40px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Gradient Background in Header */
+.header {
+  position: relative;
+  text-align: center;
+  padding: 100px 20px;
+  background-image: linear-gradient(135deg, #8a9fb6, #f0f0f0);
+  color: white;
+  transition: background-image 0.5s ease-in-out;
+}
+
+/* Hover Effect for Header */
+.header:hover {
+  background-image: linear-gradient(135deg, #f0f0f0, #8a9fb6);
+}
+
+/* Hover Effects for Links */
+.navbar a:hover {
+  background-color: #555;
+  color: #fff;
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar li {
+    margin-bottom: 10px;
+  }
+
+  .page-content {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+}
+
+.goto a{
+ text-decoration: none;
+ font-family: Arial, Helvetica, sans-serif;
+ font-size: 1.5rem;
+ font-weight: 300;
+}
+.goto{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:20px;
+}
+
+.goto img{
+  width: 50px;
+}
+
+.goto a:hover {
+  color: #5b6264;
+}

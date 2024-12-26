@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>C Programming - CodeLearn</title>
+  <link rel="stylesheet" href="language.css">
+</head>
+<body>
+  <nav>
+    <ul class="navbar">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="c.html">C</a></li>
+      <li><a href="python.html">Python</a></li>
+      <li><a href="java.html">Java</a></li>
+      <li><a href="html.html">HTML</a></li>
+      <li><a href="javascript.html">JavaScript</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  
+  <main class="page-content">
+    <h1>C Programming</h1>
+    <p>C is a powerful general-purpose programming language. It is fast, portable, and widely used in systems programming, game development, embedded systems, and more.</p>
+    
+    <section class="c-basics">
+      <h2>Basics of C</h2>
+      <ul>
+        <li>C programs are written in plain text and saved with a <code>.c</code> extension.</li>
+        <li>C uses a compiler to convert the source code into executable code.</li>
+        <li>The basic structure of a C program includes libraries, a main function, and statements.</li>
+        <li>C supports low-level memory manipulation, making it highly efficient for performance-critical applications.</li>
+      </ul>
+    </section>
+
+    <section class="data-types">
+      <h2>Data Types in C</h2>
+      <p>C provides a variety of data types to handle different kinds of data. Below are the commonly used data types in C:</p>
+      <ul>
+        <li><strong>int</strong> - Used for storing integer values (e.g., <code>int x = 10;</code>).</li>
+        <li><strong>float</strong> - Used for storing floating-point numbers (e.g., <code>float y = 3.14;</code>).</li>
+        <li><strong>char</strong> - Used for storing single characters (e.g., <code>char letter = 'A';</code>).</li>
+        <li><strong>double</strong> - Used for storing double precision floating-point numbers.</li>
+        <li><strong>void</strong> - Represents the absence of type (e.g., in functions that do not return a value).</li>
+      </ul>
+    </section>
+
+    <section class="functions">
+      <h2>Functions in C</h2>
+      <p>In C, functions allow you to organize code into reusable blocks. Functions are defined with a return type, name, and parameters.</p>
+      <h3>Function Syntax:</h3>
+      <pre><code>return_type function_name(parameter1, parameter2, ...) {
+    // body of the function
+}</code></pre>
+      <p><strong>Example:</strong> A simple function to add two numbers:</p>
+      <pre><code>#include &lt;stdio.h&gt;
+
+int add(int a, int b) {
+    return a + b;
+}
+
+int main() {
+    int result = add(3, 5);
+    printf("Sum: %d\n", result);
+    return 0;
+}</code></pre>
+    </section>
+
+    <section class="code-snippets">
+      <h2>Code Snippets</h2>
+      <h3>Hello, World Program</h3>
+      <pre><code>#include &lt;stdio.h&gt;
+
+int main() {
+    printf("Hello, World!\n");
+    return 0;
+}</code></pre>
+
+      <h3>Basic Input/Output</h3>
+      <pre><code>#include &lt;stdio.h&gt;
+
+int main() {
+    int age;
+    printf("Enter your age: ");
+    scanf("%d", &age);
+    printf("You are %d years old.\n", age);
+    return 0;
+}</code></pre>
+
+      <h3>Simple Conditional Statement</h3>
+      <pre><code>#include &lt;stdio.h&gt;
+
+int main() {
+    int number;
+    printf("Enter a number: ");
+    scanf("%d", &number);
+
+    if (number % 2 == 0) {
+        printf("%d is even.\n", number);
+    } else {
+        printf("%d is odd.\n", number);
+    }
+    return 0;
+}</code></pre>
+    </section>
+    
+    <div class="goto">
+      <img src="/images/contract.png" alt="test">
+      <a href="quiz.html">Enough Learning, Try Your Knowledge</a>
+    </div>
+  </main>
+  
+</body>
+</html>
